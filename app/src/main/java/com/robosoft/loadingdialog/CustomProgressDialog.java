@@ -15,11 +15,20 @@ public class CustomProgressDialog extends Dialog {
     CustomProgressDialog dialog;
     private TextView textview;
 
+    /**
+     * Pass the activity context to the custom progress dialog
+     * @param context
+     */
     public CustomProgressDialog(Context context) {
         super(context);
         this.mContext = context;
     }
 
+    /**
+     * Pass the activity context and the theme for the custom progress dialog
+     * @param context
+     * @param theme
+     */
     public CustomProgressDialog(Context context, int theme) {
         super(context, theme);
     }
@@ -50,6 +59,12 @@ public class CustomProgressDialog extends Dialog {
         return dialog;
     }
 
+    /**
+     * Dismisses the dialog when called. If message is not null (message != null),
+     * A toast message is shown as the dialog is dismissed else nothing happens
+     * @param message
+     * @return instance of dialog
+     */
     public CustomProgressDialog dismiss(CharSequence message) {
         if (dialog != null) {
             if(message != null){
