@@ -29,7 +29,7 @@ public class CustomProgressDialog extends Dialog {
      * @param message
      * @return
      */
-    public CustomProgressDialog show(CharSequence message) {
+    public CustomProgressDialog show(CharSequence message, boolean cancelabele) {
 
         dialog = new CustomProgressDialog(mContext, R.style.ProgressDialog);
         dialog.setContentView(R.layout.custom_dialog);
@@ -40,7 +40,7 @@ public class CustomProgressDialog extends Dialog {
 
 
         progress1.setColorSchemeResources(R.color.red, R.color.green, R.color.blue, R.color.orange);
-        dialog.setCancelable(false);
+        dialog.setCancelable(cancelabele);
         if (dialog != null) {
             dialog.show();
         }
