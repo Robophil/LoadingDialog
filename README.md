@@ -16,13 +16,12 @@ manually to the settings.gradle file
     include ':app', ':LoadingDialog'
 
 ##How to use(Example)
-Import com.robosoft.loadingdialog.CustomProgressDialog class into your activity
-call showDialog(String, boolean) to display loading dialog.
-pass showDialog(message_to_be_shown_with_loadingwheel, dismiss_when_screen_is_clicked)
+    import com.robosoft.loadingdialog.CustomProgressDialog class into your activity
+    #call showDialog(String, boolean) to display loading dialog.
+    #Eg showDialog(message_to_be_shown_with_loadingwheel, dismiss_when_screen_is_clicked)
 
-call dismiss(String) to be dismiss dialog. Pass a string to display a toast or null to just dismiss
-the dialog
-pass (Logging_you_in_pls_wait)
+    #call dismiss(String) to be dismiss dialog. Pass a string to display a toast or null to just dismiss the dialog
+    #EG (Logging_you_in_pls_wait)
 
 ###Sample code
 
