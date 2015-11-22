@@ -34,12 +34,16 @@ public class CustomProgressDialog extends Dialog {
     }
 
     /**
-     * Display the custom progress dialog
+     * Display the custom progress loading dialog.
+     * Accepts two parameters, the message to be shown and a boolean indicating
+     * if a tap on the screen dismisses the dialog
      *
      * @param message
-     * @return
+     * @param cancelabele
+     *
+     * @return instance of the customProgressDialog
      */
-    public CustomProgressDialog show(CharSequence message, boolean cancelabele) {
+    public CustomProgressDialog showDialog(CharSequence message, boolean cancelabele) {
 
         dialog = new CustomProgressDialog(mContext, R.style.ProgressDialog);
         dialog.setContentView(R.layout.custom_dialog);

@@ -151,8 +151,8 @@ public class MaterialProgressDrawable extends Drawable implements Animatable {
      * Set the overall size for the progress spinner. This updates the radius
      * and stroke width of the ring.
      *
-     * @param size One of {@link com.takeoffandroid.material.MaterialProgressDrawable.LARGE} or
-     *             {@link com.takeoffandroid.material.MaterialProgressDrawable.DEFAULT}
+     * @param size One of {@link com.robosoft.loadingdialog.utilities.MaterialProgressDrawable.LARGE} or
+     *             {@link com.robosoft.loadingdialog.utilities.MaterialProgressDrawable.DEFAULT}
      */
     public void updateSizes(@ProgressDrawableSize int size) {
         final DisplayMetrics metrics = mResources.getDisplayMetrics();
