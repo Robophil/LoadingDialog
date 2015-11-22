@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.robosoft.loadingdialog;
+package com.robosoft.loadingdialog.widget;
 
 
 import android.content.Context;
@@ -33,6 +33,9 @@ import android.support.v4.view.ViewCompat;
 import android.util.AttributeSet;
 import android.view.animation.Animation;
 import android.widget.ImageView;
+
+import com.robosoft.loadingdialog.R;
+import com.robosoft.loadingdialog.utilities.MaterialProgressDrawable;
 
 
 public class MaterialProgressBar extends ImageView {

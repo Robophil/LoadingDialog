@@ -4,6 +4,8 @@ import android.app.Dialog;
 import android.content.Context;
 import android.widget.TextView;
 
+import com.robosoft.loadingdialog.widget.MaterialProgressBar;
+
 
 public class CustomProgressDialog extends Dialog {
     MaterialProgressBar progress1;

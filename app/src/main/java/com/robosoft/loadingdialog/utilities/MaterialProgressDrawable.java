@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.robosoft.loadingdialog;
+package com.robosoft.loadingdialog.utilities;
 
 import android.content.Context;
 import android.content.res.Resources;
