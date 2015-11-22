@@ -3,6 +3,7 @@ package com.robosoft.loadingdialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.robosoft.loadingdialog.widget.MaterialProgressBar;
 
@@ -51,7 +52,10 @@ public class CustomProgressDialog extends Dialog {
 
     public CustomProgressDialog dismiss(CharSequence message) {
         if (dialog != null) {
-            textview.setText(message);
+            if(message != null){
+                Toast.makeText(getContext(),message,Toast.LENGTH_SHORT).show();
+            }
+
             dialog.dismiss();
         }
 
