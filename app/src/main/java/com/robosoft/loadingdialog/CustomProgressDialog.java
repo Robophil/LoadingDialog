@@ -36,6 +36,8 @@ public class CustomProgressDialog extends Dialog {
 
         progress1 = (MaterialProgressBar) dialog.findViewById(R.id.progress1);
         textview = (TextView) dialog.findViewById(R.id.dialog_message);
+
+        //set message to be shown alongside spinner
         textview.setText(message);
 
 
