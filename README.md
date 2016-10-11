@@ -4,27 +4,35 @@ A loading dialog showing intermediate progress implemented in material designs f
 Simply include the project as a module and add as a compile dependency in app:build.gradle file
 compile project(':LoadingDialog')
 ###Example below
-
+```gradle
     dependencies {
         compile fileTree(dir: 'libs', include: ['*.jar'])
         compile 'com.android.support:appcompat-v7:23.1.1'
         compile project(':LoadingDialog')
     }
+```
 
 If you imported as a module, android studio will add the following ':LoadingDialog' for you, else add it yourself
 manually to the settings.gradle file
     include ':app', ':LoadingDialog'
 
 ##How to use(Example)
+```java
     import com.robosoft.loadingdialog.CustomProgressDialog class into your activity
-    #call showDialog(String, boolean) to display loading dialog.
-    #Eg showDialog(message_to_be_shown_with_loadingwheel, dismiss_when_screen_is_clicked)
-
-    #call dismiss(String) to be dismiss dialog. Pass a string to display a toast or null to just dismiss the dialog
-    #EG (Logging_you_in_pls_wait)
+    /**
+    * Call method to show dialog
+    * String, Boolean
+    */
+    public showDialog(message_to_be_shown_with_loadingwheel, dismiss_when_screen_is_clicked)
+    /**
+    * Call method to dismiss. Pass a string to show as toast when done
+    * String
+    */
+    public dismiss(dismiss_text);
+ ```
 
 ###Sample code
-
+```java
     import android.app.Activity;
     import android.os.Bundle;
     import android.view.View;
@@ -49,6 +57,6 @@ manually to the settings.gradle file
             });
         }
     }
-
+```
 ##Special Thanks
 http://takeoffandroid.com/dialog/material-progress-dialog-using-v4-support-library/
