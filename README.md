@@ -18,7 +18,7 @@ manually to the settings.gradle file
 
 ##How to use(Example)
 ```java
-    import com.robosoft.loadingdialog.CustomProgressDialog class into your activity
+    import com.robosoft.loadingdialog.CustomProgressDialog
     /**
     * Call method to show dialog
     * String, Boolean
